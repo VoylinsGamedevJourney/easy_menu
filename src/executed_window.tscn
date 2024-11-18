@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx6kqsn23g06d"]
+
+[ext_resource type="Script" path="res://executed_window.gd" id="1_gvp6u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4pkk2"]
+bg_color = Color(0.180933, 0.180933, 0.180933, 1)
+
+[node name="ExecutedWindow" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4pkk2")
+script = ExtResource("1_gvp6u")
+
+[node name="VBox" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 7
+theme_override_constants/margin_right = 7
+
+[node name="CommandLog" type="RichTextLabel" parent="VBox/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+scroll_following = true
+
+[node name="HBox" type="HBoxContainer" parent="VBox"]
+layout_mode = 2
+
+[node name="SaveCloseButton" type="Button" parent="VBox/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Save values"
+
+[node name="CloseButton" type="Button" parent="VBox/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Close"
+
+[connection signal="pressed" from="VBox/HBox/SaveCloseButton" to="." method="_on_save_close_button_pressed"]
+[connection signal="pressed" from="VBox/HBox/CloseButton" to="." method="_on_close_button_pressed"]
