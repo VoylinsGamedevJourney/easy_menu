@@ -4,8 +4,7 @@ A simple application to make compiling/building software easier for your users o
 
 ## How does it work?
 
-<!-- TODO: Add link to examples. -->
-Take a look at the [examples] which will show how this application works. Basically it looks for a file called easy_menu.conf and uses the data in that file to build a menu. In this menu you can let the user adjust settings and press buttons to do actions. That's it, it's that simple.
+Take a look at the [examples](https://github.com/VoylinsGamedevJourney/easy_menu/tree/master/examples) which will show how this application works. Basically it looks for a file called easy_menu.conf and uses the data in that file to build a menu. In this menu you can let the user adjust settings and press buttons to do actions. That's it, it's that simple.
 
 ## Why does this exist?
 
