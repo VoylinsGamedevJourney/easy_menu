@@ -23,7 +23,7 @@ To place comments in the file, start the line with a `#`. As simple as that and 
 
 ### Header blocks
 
-A header block is what I call the parts such as `[ TITLE ]`, text between brackets. For some examples you can go to [https://github.com/voylin/easy_menu/blob/master/examples](https://github.com/voylin/easy_menu/blob/master/examples) but here is a quick rundown of all possibilities and available nodes.
+A header block is what I call the parts such as `[ TITLE ]`, text between brackets. For some examples you can go to [https://github.com/VoylinsGamedevJourney/easy_menu/blob/master/examples](https://github.com/VoylinsGamedevJourney/easy_menu/blob/master/examples) but here is a quick rundown of all possibilities and available nodes.
 
 #### Settings
 
