@@ -1,0 +1,9 @@
+.godot/
+.import/
+
+.directory
+
+*.x86*
+*.exe
+*.pck
+*.zip
